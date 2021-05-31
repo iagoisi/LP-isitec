@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    padding: 4rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.section_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    grid-gap: 5rem;
+    padding: 4em;
+    align-items: center;
+}
+
+.animation_01 {
+    display: none;
+}
+
+.animation_02 {
+    display: none;
+}
+
+.img_intro img {
+    width: 100%;
+}
+
+.intro h1 {
+    margin-bottom: 1.4rem;
+    max-width: 100%;
+}
+
+.section_1 .intro .bigText {
+    font-size: 5rem;
+    font-family: "Roboto Mono";
+    font-weight: normal;
+    background:#FAFF04;
+    line-height: 8rem;
+}
+
+.intro h1 .smallText {
+    font-family: "Roboto Mono";
+    font-weight: normal;
+    font-size: 2.7rem;
+    line-height: 3.75rem;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    border: solid 3px #9d9d9d;
+    font-size: 1.4em;
+    background: #F3F2F2;
+    margin-bottom: 1.75rem;
+    font-family: "Roboto Mono";
+}
+
+input:focus {
+    outline: none;
+    border: solid 3px #0AB2FA;
+}
+
+
+input:hover {
+    border: solid 3px #0AB2FA;
+}
+
+input#e-mail::placeholder {
+    font-family: "Roboto Mono";
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#button {
+    grid-area: button;
+    color: #FFF;
+    font-size: 3rem;
+    letter-spacing: .4rem;
+    font-family: "Roboto mono";
+    width: 100%;
+    height: 60px;
+    background: #0AB2FA;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 3em;
+}
+
+#button:hover {
+    box-shadow: 0 0 1em #FAFF04;
+}
+
+
+
+/* ---------------------------- Section 2 ---------------------------- */
+
+.section_2 {
+    background: #E63552;
+    display: flex;
+    align-items: center;
+}
+
+.section_2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.section_2 ul li {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto Mono";
+    color: #fff;
+    /* min-width: 200px; */
+    max-width: 300px;
+}
+
+.section_2 ul li p {
+    font-size: 1.4rem;
+}
+
+.section_2 ul li:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+
+.section_2 ul li:first-child p {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.section_2 ul li:last-child p {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+
+/* ---------------------------- Aspas ---------------------------- */
+
+.aspas_1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.aspas_2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* ---------------------------- Section 3 ----------------------------  */
+
+.section_3  {
+    font-family: "Roboto Mono";
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_3 ul {
+    margin-top: 2em;
+}
+
+.section_3 ul li {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.section_3 ul li p {
+    font-size: 1.4rem;
+    max-width: 330px;
+    margin-right: 1rem;
+}
+
+.section_3 ul li:nth-child(3) {
+    justify-content: flex-end;
+    /* background: blue; */
+}
+
+.section_3 ul li:nth-child(2) {
+    justify-content: center;
+}
+
+.section_3 div {
+    font-family: "Roboto Mono";
+}
+
+.section_3 .bigTitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.section_3 .bigTitle h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 3.4rem;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    align-items: center;
+}
+
+.section_3 .bigTitle h3 {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: normal;
+    line-height: 3rem;
+}
+
+.section_3 .bigTitle h2::after {
+    display: flex;
+    content: '';
+    background: #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 3rem;
+}
+
+
+
+/* ---------------------- ANIMATION --------------------------- */
+
+.hideIntro {
+    display: hidden;
+    animation: hideIntro 1s forwards;
+}
+
+.openAnimate {
+    display: block;
+    background: tomato;
+    animation: openAnima 1s forwards;
+}
+
+@keyframes openAnima{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hideIntro{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .section_1 .intro .bigText {
+        font-size: 3.5rem;
+        font-family: "Roboto Mono";
+        font-weight: normal;
+        background:#FAFF04;
+        line-height: 5.5rem;
+    }
+
+    .intro h1 .smallText {
+        font-family: "Roboto Mono";
+        font-weight: normal;
+        font-size: 1.9rem;
+        line-height: 3.4rem;
+    }
+
+
+    #button {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* ---------------------- IPAD --------------------------- */
+
+@media (max-width: 768px) {
+
+    .section_1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_1 #button {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        letter-spacing: .5rem;
+
+    }
+
+    .section_1 .intro h1 {
+        text-align: center;
+    }
+
+    .section_1 .intro h1 .bigText {
+        font-size: 4.6rem;
+        line-height: 6.8rem;
+    }
+
+    .section_1 .intro h1 .smallText {
+        font-size: 2.2rem;
+        line-height: 3.6rem;
+    }
+
+    .section_2 ul {
+        flex-direction: column;
+    }
+
+    .section_2 ul li {
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .section_2 ul li:first-child p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .section_2 ul li:nth-child(2) p {
+        margin-top: 2rem;
+    }
+
+
+    .section_2 ul li:last-child p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .section_2 ul li:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+
+    .section_3 .bigTitle h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1.5em;
+        font-weight: normal;
+    }
+
+}
+
+
+
+/* ---------------------- MOBILE --------------------------- */
+
+@media (max-width: 425px) {
+
+    .section_1 .intro h1 .bigText {
+        font-size: 2.3rem;
+        line-height: 3.5rem;
+    }
+
+    .section_1 .intro h1 .smallText {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
+
+
+    input#e-mail::placeholder {
+        font-family: "Roboto Mono";
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .section_1 #button {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+
+
