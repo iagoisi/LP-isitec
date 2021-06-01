@@ -1,6 +1,5 @@
 const fields =  document.querySelectorAll('[required]');
 
-
 function customValidation(event) {
 
     event.preventDefault();
@@ -27,7 +26,7 @@ function customValidation(event) {
         const spanError = field.parentNode.querySelector('span.error')
 
 
-        if(error) {
+        if(error === 'patternMismatch') {
             spanError.classList.add('active');
             spanError.innerHTML = 'Digite um e-mail válido';
         } else {
@@ -36,70 +35,14 @@ function customValidation(event) {
         }
 }
 
-
 for ( const field of fields ) {
     field.addEventListener('invalid', customValidation)
     field.addEventListener('blur', customValidation)
 }
 
-
 document.querySelector('form')
 .addEventListener('submit', event => {
-    console.log('formulário enviado')
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const form = document.querySelector('form');
-
-// console.log(form)
-
-
-// function cap(event) {
-
-//     console.log("entrei na captura")
-    
-//     event.preventDefault()
-// }
-
-// let valor = "";
-
-//     valor = form.parentNode.querySelector('input').value;
-//     const regexpEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
-
-//     console.log(valor);
-//     if ( valor !== regexpEmail || "") {
-//         console.log('digite um e-mail válido');
-//     } else {
-//         form.addEventListener('submit', cap)        
-//     }
-
-
-
-//     form.addEventListener('submit', cap)
-
-
-
-
-
-
-
-
-
 
 
 

@@ -72,6 +72,8 @@ input {
     font-size: 1.4em;
     background: #F3F2F2;
     font-family: "Roboto Mono";
+    border-radius: 5px;
+
 }
 
 input:focus {
@@ -103,6 +105,7 @@ input::placeholder {
 }
 
 .input span.error.active {
+    border-radius: 5px;
     border: 1px solid red;
     padding: 0.8rem;
     margin-bottom: 1rem;
@@ -122,6 +125,8 @@ input::placeholder {
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 3em;
+    border-radius: 5px;
+
 }
 
 #button:hover {
