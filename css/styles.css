@@ -71,7 +71,6 @@ input {
     border: solid 3px #9d9d9d;
     font-size: 1.4em;
     background: #F3F2F2;
-    margin-bottom: 1.75rem;
     font-family: "Roboto Mono";
 }
 
@@ -80,15 +79,33 @@ input:focus {
     border: solid 3px #0AB2FA;
 }
 
+.input {
+    position: relative;
+}
 
 input:hover {
     border: solid 3px #0AB2FA;
 }
 
-input#e-mail::placeholder {
+input::placeholder {
     font-family: "Roboto Mono";
     text-align: center;
     font-size: 1.7rem;
+}
+
+.input span.error {
+    display: flex;
+    font-size: 1.7rem;
+
+    font-family: Roboto Mono;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 #button {
@@ -103,6 +120,7 @@ input#e-mail::placeholder {
     cursor: pointer;
     border: none;
     font-weight: bold;
+    margin-top: 2rem;
     margin-bottom: 3em;
 }
 
@@ -388,7 +406,7 @@ input#e-mail::placeholder {
     }
 
 
-    input#e-mail::placeholder {
+    input::placeholder {
         font-family: "Roboto Mono";
         text-align: center;
         font-size: 1.2rem;

@@ -13,19 +13,21 @@
 <body>
 
     <div class="section_1">
-        <lottie-player class="animation_01" src="./js/send_messege.json" background="transparent" spped="1" style="width: 300px; height: 300px;" autoplay loop></lottie-player>
+        <!-- <lottie-player class="animation_01" src="./js/send_messege.json" background="transparent" spped="1" style="width: 300px; height: 300px;" autoplay loop></lottie-player> -->
 
-        <lottie-player class="animation_02" src="./js/899-like.json"  background="transparent"  speed="0.8"  style="width: 300px; height: 300px;" autoplay dalay="1"></lottie-player>
+        <!-- <lottie-player class="animation_02" src="./js/899-like.json"  background="transparent"  speed="0.8"  style="width: 300px; height: 300px;" autoplay dalay="1"></lottie-player> -->
 
         <div class="intro">
             <h1><spam class="bigText">Descubra como<br> expandir seu negócio,<br></spam> <spam class="smallText">vender mais e conquistar clientes com a ferramenta de marketing mais eficaz e econômica que existe na atualidade.</spam></h1>
 
             <form action="">
-                <label for="e-mail"></label>
-                <input placeholder="Insira seu melhor e-mail" type="text" style="padding:0 20px" name="e-mail" id="e-mail" required>
+                <div class="input">
+                    <label for="e-mail"></label>
+                    <input id="emailInput" placeholder="Insira seu melhor e-mail" type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+                    <span class="error"></span>
+                </div>
+                <button type="submit" id="button">FAZER MEU CADASTRO</button>
             </form>
-
-            <button type="submit" id="button">FAZER MEU CADASTRO</button>
 
         </div>
 
@@ -83,7 +85,7 @@
         <img src="./img/”.svg"class="aspas_2">
     </div>
 
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
     
 </body>
 </html>
