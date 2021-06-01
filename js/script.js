@@ -47,6 +47,7 @@ document.querySelector('form')
 .addEventListener('submit', event => {
     console.log('formulário enviado')
 
+    event.preventDefault()
 })
 
 
