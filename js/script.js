@@ -3,8 +3,6 @@ const fields =  document.querySelectorAll('[required]');
 
 function customValidation(event) {
 
-    event.preventDefault();
-
     const field = event.target
 
         function verifyErrors() {
