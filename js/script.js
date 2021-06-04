@@ -17,13 +17,10 @@ function customValidation(event) {
 
             for ( let error in field.validity ) {
                 
-
                 if(field.validity[error] && !field.validity.valid) {
                     foundError = error;
                 }
             }
-
-            console.log(foundError)
             return foundError;
         }
 
@@ -34,7 +31,6 @@ function customValidation(event) {
 
         if(error === 'patternMismatch') {
             spanError.classList.add('active');
-            spanError.innerHTML = 'Digite um e-mail válido';
         } else {
             spanError.classList.remove('active');
             spanError.innerHTML = '';
@@ -73,9 +69,9 @@ form.addEventListener('submit', event => {
         // redirect: 'follow',
         body: JSON.stringify(data),
     })
-    // .then( r => r.location.href = "https://iagoisi.github.io/LP-isitec/obrigado")
-    .then(response => response.json())
-    .then(result => console.log(result))
+    .then( r => r.location.replace("https://isinovacoes.com/obrigado"))
+    // .then(response => response.json())
+    // .then(result => console.log(result))
     // .catch(error => console.log('error', error));
 
 
