@@ -73,8 +73,9 @@ form.addEventListener('submit', event => {
         // redirect: 'follow',
         body: JSON.stringify(data),
     })
-    // .then(response => response.json())
-    // .then(result => console.log(result))
+    // .then( r => r.location.href = "https://iagoisi.github.io/LP-isitec/obrigado")
+    .then(response => response.json())
+    .then(result => console.log(result))
     // .catch(error => console.log('error', error));
 
 
