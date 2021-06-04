@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: Roboto Mono;
 }
 
 ul li {
@@ -33,9 +34,6 @@ img {
     align-items: center;
 }
 
-.animation_01 {
-    display: none;
-}
 
 .animation_02 {
     display: none;
