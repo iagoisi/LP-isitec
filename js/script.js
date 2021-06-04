@@ -31,7 +31,6 @@ function customValidation(event) {
 
         if(error === 'patternMismatch') {
             spanError.classList.add('active');
-            // spanError.innerHTML = '';
         } else {
             spanError.classList.remove('active');
             spanError.innerHTML = '';
