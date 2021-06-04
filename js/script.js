@@ -58,9 +58,9 @@ form.addEventListener('submit', event => {
     fetch ("https://restapi.benchmarkemail.com/Emails/", { 
         headers: myHeaders,
     })
-    // .then(response => response.json())
-    // .then(result => console.log(result))
-    // .catch(error => console.log('error', error));
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
 
 
     fetch (url, {
