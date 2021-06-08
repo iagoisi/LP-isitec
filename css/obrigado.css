@@ -51,9 +51,30 @@
 
 }
 
-.instructions p {
+.instructions span {
   font-size: 1.7rem;
   margin-bottom: 3rem;
+}
+
+
+.instructions a {
+  cursor: pointer;
+}
+
+.link {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.link:hover .img {
+  opacity: 0.3;
+}
+
+.instructions img {
+  width: 200px;
+  margin-bottom: 8rem;
+  opacity: 1;
+  transition: .5s ease;
 }
 
 span {
