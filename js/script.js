@@ -69,11 +69,11 @@ form.addEventListener('submit', event => {
         // redirect: 'follow',
         body: JSON.stringify(data),
     })
-    .then( r => r.location.replace("https://isinovacoes.com/obrigado"))
     // .then(response => response.json())
     // .then(result => console.log(result))
-    // .catch(error => console.log('error', error));
+    .then(result => window.location.href = "./obrigado.html")
+    .catch(error => console.log('error', error));
+})
+;
 
 
-
-});
